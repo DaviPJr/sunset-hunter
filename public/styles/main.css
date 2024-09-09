@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+body {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+main {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+h1, h2, h3, p{
+    font-family: "Merriweather", serif;
+    color: #7209b7;
+}
+
+h1 {
+    font-size: 80px;
+    text-shadow: 1px 4px 11px rgba(0,0,0,0.6);
+}
+
+h2{
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.sunset {
+    font-size: 50px;
+    font-family: "Orbitron", sans-serif;
+}
+
+.ufo-parent {
+    position: absolute;
+    top: 20px; /* Ajuste para a distância do topo */
+    left: 20px; /* Ajuste para a distância da esquerda */
+}
+
+.ufo {
+    height: 150px; /* Reduza o tamanho se necessário */
+    width: auto; /* Mantém a proporção original */
+    object-fit: contain;
+    opacity: 0.8; 
+}
+
+.background-image {
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    opacity: 0.5; 
+    z-index: -1; 
+}
+
+.button {
+    display: flex;
+    gap: 90px;
+    margin-top: 90px;
+}
+
+button {
+    background-color: #7209b7; 
+    color: #fff; 
+    border: none; 
+    border-radius: 15px; 
+    padding: 30px 30px; 
+    margin: 10px; 
+    font-family: "Merriweather", serif; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+button:hover {
+    background-color: #9d02b7; 
+    transform: scale(1.05); 
+}
+
+button:active {
+    background-color: #6a0d9e; 
+    transform: scale(0.95); 
+}
+
+.footer {
+    color: #7209b7;
+    font-family: "Merriweather", serif;
+    text-align: center;
+    margin-top: 140px;
+}
+
